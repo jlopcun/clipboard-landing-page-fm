@@ -1,0 +1,212 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    max-width:100%;
+}
+h1,h2,h3,p,a{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+body{
+    margin:0;
+    background-image:url('images/bg-header-mobile.png');
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    
+    
+}
+main,header{
+    padding: 0 7vw;
+}
+.complement__img{
+    padding:2rem;
+}
+.brands__images-container{
+    display:flex;
+    flex-flow:column nowrap;
+    height: 40vh;
+    width:100%;
+    align-items: center;
+    margin:10rem 0 20rem;
+}
+.brands__images{
+    flex-grow:1;
+    margin-bottom:5rem;
+    max-width:30%;
+}
+.page-main__container1{
+    margin-bottom:10rem;
+}
+.page-header,.page-main,.page-footer{
+    width:100%;
+    text-align: center;
+    
+}
+.page-header__hyper{
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    width:100vw;
+    
+   
+}
+.page-header{
+    display:flex;
+    justify-content: center;
+    flex-flow:column wrap;
+}
+[class*="content"]{
+    margin-bottom:3rem;
+}
+.page-main__container1-header-image--container{
+    max-width:100%;
+    text-align: center;
+    margin-bottom:2rem;
+    
+}
+.page-main__container1-header-image{
+    width:10rem;
+    max-width:400px;
+    
+}
+.page-header__logo{
+    margin: 100px auto 50px;
+    width:7rem;
+}
+.page-footer{
+    display:flex;
+    flex-flow:column wrap;
+    background-color:rgba(240 240 240 / .5);
+    
+    
+}
+.page-footer__logo{
+    width:3.5rem;
+    margin:50px auto 30px;
+}
+.page-footer__enlc{
+    text-decoration:none;
+    padding:15px;
+}
+.page-footer__enlc:hover{
+    color:hsl(171, 66%, 44%);
+}
+.page-footer__social-icons{
+    font-size:1.5rem;
+}
+
+[class*="link"]{
+    display:inline-block;
+    width:20rem;
+    text-decoration:none;
+    color:white;
+    font-size:1.3rem;
+    padding:.9rem .3rem;
+    text-align:center;
+    border-radius:30px;
+    box-shadow:inset 0px -5px 10px rgba(0 0 0 / .3);
+    
+}
+.link-ios:hover{
+    box-shadow:inset 0px -5px 0px hsl(171, 66%, 39%);
+}
+.link-mac:hover{
+    box-shadow:inset 0px -5px 0px hsl(233, 100%, 65%);
+}
+.link-ios{
+    background-color: hsl(171, 66%, 44%);
+    margin-bottom:1.5rem;
+}
+.link-mac{
+    background-color:hsl(233, 100%, 69%);
+    margin-bottom:6rem;
+}
+.text-black{
+    color:hsl(210, 10%, 33%);
+}
+.text-grey{
+    color:hsl(201, 11%, 66%);
+}
+
+
+.footer-web{
+    display:flex;
+    flex-flow:column wrap;
+}
+
+
+@media screen and (min-width:1100px){
+    body{
+        background-image:url('images/bg-header-desktop.png');
+        
+    }
+    main,header{
+        padding: 0;
+    }
+   
+    .page-main__container1-header-image{
+        width:15rem;
+    }
+    .page-main__container1-responsive--main{
+        display:flex;
+    }
+    .page-main__container1-header-image--container{
+        flex-grow:1;
+        width:50%;
+    }
+    .page-main__container1-header-image{
+        width:30rem;
+    }
+    .page-main__container1-responsive--child{
+        margin-right:7vw;
+    }
+    .page-header__hyper{
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+    }
+    .link-ios{
+        margin:0 1rem 6rem;
+    }
+    .header-devices{
+        display:flex;
+        flex-flow:column wrap;
+        align-items: center;
+    }
+    .brands__images-container{
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:flex-start;
+        margin:5rem 0;
+    }
+    
+    .brands__images{
+        flex-grow:0;
+    }
+    .content-and-images__contaniner{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content-images__section{
+        max-width:calc(100%/3);
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .page-footer{
+        flex-direction:row;
+        align-items:center;
+        justify-content: space-evenly;
+        padding:2em;
+    }
+
+    .footer-web{
+        flex-direction: row;
+        width:auto;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .page-footer__logo{
+        margin:0;
+    }
+    
+    
+ 
+}
